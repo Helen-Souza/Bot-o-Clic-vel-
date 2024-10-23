@@ -6,29 +6,27 @@
   <style>
     /* Estiliza o botão */
     button {
-      background-color: hwb(303 30% 13% / 0.808); /* Cor de fundo */
-      color: white; /* Cor do texto */
+      background-color: hwb(303 30% 13% / 0.808); 
+      color: white;
       border: none; /* Remove a borda padrão */
-      padding: 10px 20px; /* Espaçamento interno (vertical, horizontal) */
-      border-radius: 5px; /* Cantos arredondados */
-      font-size: 16px; /* Tamanho da fonte */
-      cursor: pointer; /* Cursor em forma de ponteiro ao passar o mouse */
-      transition: background-color 0.3s ease, transform 0.2s; /* Transição suave */
+      padding: 10px 20px; 
+      border-radius: 5px;
+      font-size: 16px; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease, transform 0.2s; 
     }
 
-    /* Efeito ao passar o mouse */
+    
     button:hover {
       background-color: #d4158b;
       transform: scale(1.05);
     }
 
-    /* Efeito ao clicar no botão */
     button:active {
       background-color: #b30fc2;
       transform: scale(0.95);
     }
 
-    /* Centraliza o botão na tela usando Flexbox */
     body {
       display: flex; /* Ativa Flexbox */
       justify-content: center; /* Centraliza horizontalmente */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Onclick</title>
+  <style>
+    /* Estiliza o botão */
+    button {
+      background-color: hwb(303 30% 13% / 0.808); /* Cor de fundo */
+      color: white; /* Cor do texto */
+      border: none; /* Remove a borda padrão */
+      padding: 10px 20px; /* Espaçamento interno (vertical, horizontal) */
+      border-radius: 5px; /* Cantos arredondados */
+      font-size: 16px; /* Tamanho da fonte */
+      cursor: pointer; /* Cursor em forma de ponteiro ao passar o mouse */
+      transition: background-color 0.3s ease, transform 0.2s; /* Transição suave */
+    }
+
+    /* Efeito ao passar o mouse */
+    button:hover {
+      background-color: #d4158b;
+      transform: scale(1.05);
+    }
+
+    /* Efeito ao clicar no botão */
+    button:active {
+      background-color: #b30fc2;
+      transform: scale(0.95);
+    }
+
+    /* Centraliza o botão na tela usando Flexbox */
+    body {
+      display: flex; /* Ativa Flexbox */
+      justify-content: center; /* Centraliza horizontalmente */
+      align-items: center; /* Centraliza verticalmente */
+      height: 100vh; /* Altura da tela */
+      margin: 0; /* Remove margens padrão */
+      background-color: rgba(122, 14, 122, 0.904);
+    }
+  </style>
+</head>
+<body>
+  <button onclick="mostrarMensagem()">Clique para ver a mensagem</button>
+
+  <script>
+    function mostrarMensagem() {
+      alert("Olha só, um clique de mestre!");
+    }
+  </script>
+</body>
+</html>
